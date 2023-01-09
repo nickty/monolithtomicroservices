@@ -1,0 +1,15 @@
+customer/node_modules
+customer/.env
+customer/.env.dev
+
+products/node_modules
+products/.env
+products/.env.dev
+
+shopping/node_modules
+shopping/.env
+shopping/.env.dev
+
+gateway/node_modules
+gateway/.env
+gateway/.env.dev
