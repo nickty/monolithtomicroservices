@@ -52,13 +52,13 @@ module.exports.FormateData = (data) => {
 };
 
 module.exports.PublishCustomerEvent = async (payload) => {
-  axios.port("http://localhost:8000/customer/app-events", {
+  axios.post("http://localhost:8000/customer/app-events", {
     payload,
   });
 };
 
 module.exports.PublishShoppingEvent = async (payload) => {
-  axios.port("http://localhost:8000/customer/app-events", {
+  axios.post("http://localhost:8000/customer/app-events", {
     payload,
   });
 };

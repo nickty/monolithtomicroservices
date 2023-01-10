@@ -81,7 +81,7 @@ class ProductService {
       };
       return FormateData(payload);
     } else {
-      return FormData({ error: "No product available" });
+      return FormateData({ error: "No product available" });
     }
   }
 }
