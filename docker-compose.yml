@@ -20,7 +20,7 @@ services:
     depends_on:
       - "nosql-db"
     volumes:
-      - ./:app
+      - .:/app
       - /app/products/node_modules
 
   shopping: 
@@ -35,8 +35,8 @@ services:
     depends_on:
       - "nosql-db"
     volumes:
-      - ./:app
-      - /app/products/node_modules
+      - .:/app
+      - /app/shopping/node_modules
 
   customer: 
     build: 
@@ -50,8 +50,8 @@ services:
     depends_on:
       - "nosql-db"
     volumes:
-      - ./:app
-      - /app/products/node_modules
+      - .:/app
+      - /app/customer/node_modules
 
   nginx-proxy:
     build:
