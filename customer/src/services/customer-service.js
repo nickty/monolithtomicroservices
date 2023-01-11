@@ -156,6 +156,8 @@ class CustomerService {
   }
 
   async SubscribeEvents(payload) {
+    payload = JSON.parse(payload);
+
     const { event, data } = payload;
 
     console.log(data);
