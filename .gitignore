@@ -13,3 +13,5 @@ shopping/.env.dev
 gateway/node_modules
 gateway/.env
 gateway/.env.dev
+
+db
